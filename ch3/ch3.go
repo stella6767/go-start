@@ -22,6 +22,13 @@ func main() {
 
 	variadicExample("hello", "it is s golang 가변인자")
 
+	nextInt := intSeq()
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+
+	newInts := intSeq()
+	fmt.Println(newInts())
 }
 
 func add(a int, b int) int {
@@ -33,4 +40,12 @@ func multiReturn() (int, int, int) {
 }
 func variadicExample(s ...string) {
 	fmt.Println(s)
+}
+
+func intSeq() func() int {
+	i := 0
+	return func() int {
+		i++
+		return i
+	}
 }

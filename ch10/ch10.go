@@ -7,6 +7,7 @@ import (
 
 /**
 golang에서 oop란
+https://mingrammer.com/translation-go-and-oop/
 
 */
 

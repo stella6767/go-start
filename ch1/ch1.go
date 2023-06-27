@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
 	숫자 : uint8,16,32,64   //unsigned int (양수)
@@ -28,6 +30,13 @@ import "fmt"
 
 var g string = "global" //패키지 전역변수
 
+const (
+	PRODUCT  = "Mobile"
+	QUANTITY = 50
+	PRICE    = 50.50
+	STOCK    = true
+)
+
 func main() {
 
 	var a = 10 //타입추론
@@ -42,9 +51,16 @@ func main() {
 	var d float64 = float64(c)
 	//캐스팅 시 자료유실 주의
 
-	var _ int
+	var f int //기본값 0
+	var h string
 
-	fmt.Println(msg, a, c, d)
+	if h == "" {
+		fmt.Println("h is ''")
+	}
+
+	fmt.Println(msg, a, c, d, f, h)
+
+	//PRODUCT = "asd"
 
 	{
 		fmt.Println(a)

@@ -1,4 +1,4 @@
-package main
+package ch9
 
 import (
 	"fmt"
@@ -18,9 +18,9 @@ struct 내에서는 함수를 구현할 수 없다. 대신 자바처럼 메서�
 
 https://mingrammer.com/translation-go-and-oop/
 public private이 없다.
-대신 멤버변수를 카멜케이스로 명시하면 외부패키지에서 접근할수 없다.
-
-
+대신 멤버변수를 카멜케이스로 명시하면 외부패키지에서 접근할수 없다. 패키지 단위
+public으로 만들고 싶으면 대문자로 시작
+근데 대소문자가 없는 언어에서는 어떻게 동작하지??
 
 */
 

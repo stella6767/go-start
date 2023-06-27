@@ -29,6 +29,14 @@ func main() {
 
 	newInts := intSeq()
 	fmt.Println(newInts())
+
+	// 람다
+	calc := func(a int, b int) int {
+		return a + b
+	}
+
+	fmt.Println(calc)       //output : 0x467fa0
+	fmt.Println(calc(1, 2)) //output : 3
 }
 
 func add(a int, b int) int {
